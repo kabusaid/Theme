@@ -12,17 +12,16 @@
 <body>
 
 <div class="container">
+
 	<nav class="navbar navbar-default">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#">Manager</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">All</a></li>
+			<li><a href="#">All</a></li>
 			<li><a href="#">Add</a></li>
 		</ul>
 	</nav>
-
-	
 		  
 	<div class="row">
 		<div class="col-md-12">
@@ -70,63 +69,72 @@
 		</div>
 	
 	</div>
+	
+	<div class="col-md-3">
+		<a class="btn btn-primary" href="#"> Add Person </a> 
+	</div>
+	
+	<div style="clear:both"></div>
+	<br/>
+					
+	<div class="row">
+		<div class="col-md-12">			
+			<table class="table table-striped table-bordered" >
+				<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Number ID</th>
+					<th>Edit</th>
+					<th>Show</th>
+					<th>Delete</th>
+				</tr>
+				</thead>
+				<tbody>
 
+					<tr>
+						<td> ID </td>
+						<td> Name </td>
+						<td> Number ID </td>
+						<td> <a class="btn btn-xs btn-info" href="/products/{{$product->id }}/edit/"> Edit </a> </td>
+						<td> <a class="btn btn-xs btn-success" href="/products/{{$product->id }}"> Show </a> </td>
+						<td>
+							<form action="#" method="post">
+								<input class="btn btn-xs btn-danger" type="submit" value="Delete" />
+							</form>
+						</td>
+					</tr>
+					
+					<tr>
+						<td> ID </td>
+						<td> Name </td>
+						<td> Number ID </td>
+						<td> <a class="btn btn-xs btn-info" href="/products/{{$product->id }}/edit/"> Edit </a> </td>
+						<td> <a class="btn btn-xs btn-success" href="/products/{{$product->id }}"> Show </a> </td>
+						<td>
+							<form action="#" method="post">
+								<input class="btn btn-xs btn-danger" type="submit" value="Delete" />
+							</form>
+						</td>
+					</tr>
+					
+					<tr>
+						<td> ID </td>
+						<td> Name </td>
+						<td> Number ID </td>
+						<td> <a class="btn btn-xs btn-info" href="/products/{{$product->id }}/edit/"> Edit </a> </td>
+						<td> <a class="btn btn-xs btn-success" href="/products/{{$product->id }}"> Show </a> </td>
+						<td>
+							<form action="#" method="post">
+								<input class="btn btn-xs btn-danger" type="submit" value="Delete" />
+							</form>
+						</td>
+					</tr>
 
-<br/>	
-    <table class="table table-striped table-bordered" >
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Number ID</th>
-            <th>Edit</th>
-            <th>Show</th>
-            <th>Delete</th>
-        </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td> ID </td>
-                <td> Name </td>
-                <td> Number ID </td>
-                <td> <a class="btn btn-xs btn-info" href="/products/{{$product->id }}/edit/"> Edit </a> </td>
-                <td> <a class="btn btn-xs btn-success" href="/products/{{$product->id }}"> Show </a> </td>
-                <td>
-                    <form action="#" method="post">
-                        <input class="btn btn-xs btn-danger" type="submit" value="Delete" />
-                    </form>
-                </td>
-            </tr>
-			
-			<tr>
-                <td> ID </td>
-                <td> Name </td>
-                <td> Number ID </td>
-                <td> <a class="btn btn-xs btn-info" href="/products/{{$product->id }}/edit/"> Edit </a> </td>
-                <td> <a class="btn btn-xs btn-success" href="/products/{{$product->id }}"> Show </a> </td>
-                <td>
-                    <form action="#" method="post">
-                        <input class="btn btn-xs btn-danger" type="submit" value="Delete" />
-                    </form>
-                </td>
-            </tr>
-			
-			<tr>
-                <td> ID </td>
-                <td> Name </td>
-                <td> Number ID </td>
-                <td> <a class="btn btn-xs btn-info" href="/products/{{$product->id }}/edit/"> Edit </a> </td>
-                <td> <a class="btn btn-xs btn-success" href="/products/{{$product->id }}"> Show </a> </td>
-                <td>
-                    <form action="#" method="post">
-                        <input class="btn btn-xs btn-danger" type="submit" value="Delete" />
-                    </form>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
+				</tbody>
+			</table>
+		</div>
+	</div>
 
 </div>
 
